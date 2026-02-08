@@ -688,7 +688,7 @@ export default function Pricing() {
                         backdropFilter: "blur(10px)",
                         background: "rgba(255,255,255,0.9)"
                       }}
-                      formatter={(value: number) => [`₹${value} Cr`, "Revenue"]}
+                      formatter={(value: number | undefined) => [`?${value ?? 0} Cr`, "Revenue"]}
                     />
                     <Legend wrapperStyle={{ fontSize: 11, marginTop: 20 }} />
                     <Bar dataKey="Hospitals" stackId="a" fill={C.teal} radius={[4, 4, 0, 0]} />
@@ -738,7 +738,7 @@ export default function Pricing() {
                         backdropFilter: "blur(10px)",
                         background: "rgba(255,255,255,0.9)"
                       }}
-                      formatter={(value: number) => [`₹${value} Cr`, "Revenue"]}
+                      formatter={(value: number | undefined) => [`?${value ?? 0} Cr`, "Revenue"]}
                     />
                     <Area 
                       type="monotone" 
@@ -940,5 +940,6 @@ export default function Pricing() {
     </PageShell>
   );
 }
+
 
 
