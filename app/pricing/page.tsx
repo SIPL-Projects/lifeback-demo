@@ -940,3 +940,5 @@ export default function Pricing() {
     </PageShell>
   );
 }
+
+
