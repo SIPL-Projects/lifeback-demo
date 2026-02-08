@@ -1299,7 +1299,7 @@ Scale-aligned assessment: Integrates with standard clinical scales (optional) to
 
             <div className="modal-body">
               <div className="modal-tabs" aria-label="Assessment steps">
-                {(Object.keys(stepTitles) as Array<keyof typeof stepTitles>).map((k) => {
+                {(Object.keys(stepTitles) as string[]).map((k) => {
                   const s = Number(k) as 1 | 2 | 3 | 4 | 5;
                   return (
                     <button
