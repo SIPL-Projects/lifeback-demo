@@ -57,6 +57,7 @@ const C = {
   // Neutrals
   slate900: "#0F172A",
   slate700: "#334155",
+  slate600: "#475569", // Standard Tailwind CSS slate600
   slate500: "#64748B",
   slate300: "#CBD5E1",
   slate200: "#E2E8F0",
